@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1667743709 source:c:\users\moham\onedrive\desktop\lab\lab5-2 program to take information of array of 5 employees, then display their data.\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1667743783 source:c:\users\moham\onedrive\desktop\lab\lab5-2 program to take information of array of 5 employees, then display their data\main.c
+	<stdio.h>
+	<stdlib.h>
+

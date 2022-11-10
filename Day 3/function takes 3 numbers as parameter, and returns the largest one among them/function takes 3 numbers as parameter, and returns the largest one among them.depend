@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1667390978 source:c:\users\moham\onedrive\desktop\lab\function takes 3 numbers as parameter, and returns the largest one among them\main.c
+	<stdio.h>
+	<stdlib.h>
+

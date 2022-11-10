@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1667708764 source:c:\users\moham\onedrive\desktop\lab\lab4-3 c program to take char and displays if it is normal or extended key along with its ascii value.\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1667708831 source:c:\users\moham\onedrive\desktop\lab\lab4-3 c program to take char and displays if it is normal or extended key along with its ascii value\main.c
+	<stdio.h>
+	<stdlib.h>
+
