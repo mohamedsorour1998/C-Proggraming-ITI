@@ -29,6 +29,9 @@ Answer "as much as you can" from the following:
 ------------------------------------------------
 Day2:
 =====
+
+Answer the following questions:
+--------------------------------
 1- Write a C program to check whether a given number is positive or negative or zero
 2- Write a C program to check whether a given number is even or odd
 3- C Program to Find the Largest Number Among Three Numbers
