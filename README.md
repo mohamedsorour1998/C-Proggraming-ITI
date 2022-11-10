@@ -60,7 +60,7 @@ Answer the following questions:
 4- Write a function takes 3 numbers as parameter, and returns the largest one among them... write a program to test it.
 
 5- Write a C Function that takes one character and checks if it alphabet or not.
-w
+
 6- Write C Function that converts the any letter from lowercase to uppercase.
 
 7-Write a C Function that prints the cube of any number.
