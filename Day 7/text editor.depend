@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1667891361 source:m:\c\lec 6\text editor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"mylibrary.h"
+
+1667822806 source:m:\c\lec 6\text editor\mylibrary.c
+	"mylibrary.h"
+
+1667822806 m:\c\lec 6\text editor\mylibrary.h
+	<windows.h>
+
+1668144188 source:c:\users\moham\onedrive\desktop\all labs\all labs\d7 - text editor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"mylibrary.h"
+
+1667822806 c:\users\moham\onedrive\desktop\all labs\all labs\d7 - text editor\mylibrary.h
+	<windows.h>
+
+1667822806 source:c:\users\moham\onedrive\desktop\all labs\all labs\d7 - text editor\mylibrary.c
+	"mylibrary.h"
+
+1668148792 source:c:\users\moham\iclouddrive\iti iot intake 43 materials\c\labs\day 7\mylibrary.c
+	"mylibrary.h"
+
+1668148792 c:\users\moham\iclouddrive\iti iot intake 43 materials\c\labs\day 7\mylibrary.h
+	<windows.h>
+
