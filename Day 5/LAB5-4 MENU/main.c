@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define NOEMP 5
+
 typedef struct EmpArr_of_Struct
 {
     int id;
@@ -9,15 +11,13 @@ typedef struct EmpArr_of_Struct
     char name[20];
 } EmpArr_of_Struct;
 
-
-EmpArr_of_Struct emp[5] = {0};
-
+EmpArr_of_Struct emp[NOEMP] ;
 
 void AddNewEmployee(EmpArr_of_Struct emp[]);
 void DisplayEmpoyee(EmpArr_of_Struct emp[], int);
 void DisplayEmpoyees(EmpArr_of_Struct emp[]);
 
-int CountEmp = 0;
+int CountEmp;
 int line = 0;
 int inPage = 0;
 
@@ -37,21 +37,19 @@ int main()
 
 void AddNewEmployee(EmpArr_of_Struct emp[])
 {
-    for(int i = 1; i <= 1; i++)
-    {
-        printf("please enter employee NO{%d} id : ", i);
-        scanf("%d", &emp[CountEmp].id);
-        printf("please enter employee NO{%d} name :", i);
-        scanf("%s", emp[CountEmp].name);
-        printf("please enter employee NO{%d} salary : ", i);
-        scanf("%d", &emp[CountEmp].salary);
-        printf("please enter employee NO{%d} bouns : ", i);
-        scanf("%d", &emp[CountEmp].bouns);
-        printf("please enter employee NO{%d} deduction : ", i);
-        scanf("%d", &emp[CountEmp].deduction);
-        CountEmp++;
-    }
+    printf("please enter employee NO{%d} id : ", CountEmp+1);
+    scanf("%d", &emp[CountEmp].id);
+    printf("please enter employee NO{%d} name :", CountEmp+1);
+    scanf("%s", emp[CountEmp].name);
+    printf("please enter employee NO{%d} salary : ", CountEmp+1);
+    scanf("%d", &emp[CountEmp].salary);
+    printf("please enter employee NO{%d} bouns : ", CountEmp+1);
+    scanf("%d", &emp[CountEmp].bouns);
+    printf("please enter employee NO{%d} deduction : ", CountEmp+1);
+    scanf("%d", &emp[CountEmp].deduction);
+    CountEmp++;
 }
+
 void DisplayEmpoyee(EmpArr_of_Struct emp[],int id_of_emp)
 {
     for(int i = id_of_emp; i <= id_of_emp; i++)
@@ -77,10 +75,11 @@ void DisplayEmpoyees(EmpArr_of_Struct emp[])
 }
 void highLight()
 {
-    menu();
-    char n = getch();
+    //menu();
+
     do
     {
+        char n = getch();
         if(n == -32)
         {
             switch (getch())
@@ -165,8 +164,65 @@ void highLight()
                 break;
             }
         }
+        else if (n == 13)
+        {
+            if(line != 0)
+            {
+                switch (line)
+                {
+                case 1: // home
+                    inPage = 1;
+                    system("cls");
+                    DisplayEmpoyee(emp, line-1);
+                    getch();
+                    break;
+                case 2: // contact
+                    inPage = 2;
+                    system("cls");
+                    DisplayEmpoyee(emp, line-1);
+                    getch();
+                    break;
+                case 3: // exit
+                    inPage = 2;
+                    system("cls");
+                    DisplayEmpoyee(emp, line-1);
+                    getch();
+                    break;
+
+                case 4: // exit
+                    inPage = 2;
+                    system("cls");
+                    DisplayEmpoyee(emp, line-1);
+                    break;
+
+                case 5: // exit
+                    inPage = 2;
+                    system("cls");
+                    DisplayEmpoyee(emp, line-1);
+                    break;
+
+                }
+            }
+        }
+        else if(n == 'd')
+        {
+            DisplayEmpoyees(emp);
+        }
+        else if(n == 'n')
+        {
+            AddNewEmployee(emp);
+        }
+        else if(n == 8)
+        {
+            menu();
+        }
+        else
+        {
+            menu();
+        }
+
     }
-    while(n != 8);
+    while(1);
     backspace();
 
 
@@ -183,7 +239,7 @@ void menu()
     {
         if(line == i+1)
         {
-            printf("\033[0;31m {%s} \033[0m\n", emp[i].name);
+            printf("\033[0;7m {%s} \033[0;31m to delete user press (DEL) this future isn't exist now \033[0m\n", emp[i].name);
         }
         else
         {

@@ -8,31 +8,18 @@ int main()
     (try to use "Array Notation while reading data" and "Pointer notation while printing data")
     */
 
+	int x[3];
+    int* IncrementArray= &x;
 
-    int input [5] = {0};
     int i=0;
-    int * ptri = &input;
-
-    for (i=0; ptri[i] < 5; i++)
-    {
-        printf("Please Enter The Data To Be Readed %d: ", i);
-        scanf("%d",&ptri[i]);
-        printf("The Data is: %d \n ", ptri[i]);
-
+    for (i=0; i<3; i++){
+    printf("Please Enter Element %d of array: ", i);
+    scanf("%d", &IncrementArray[i]);
     }
 
-
-    /* int j=0;
-     for (j=0; j==i; j++)
-     {
-         output[j] =input[i];
-
-     }
-
-     int * ptro = &output;
-     printf("The Data is: %d \n " , *ptro);*/
-
-
+    for (i=0; i<3; i++){
+    printf("Return Array %d is %d\n" ,i, IncrementArray[i]);
+    }
 
 
 
